@@ -1,0 +1,14 @@
+{
+  "workbench.editor.highlightModifiedTabs": true,
+  "files.trimFinalNewlines": true,
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#48cc66",
+    "titleBar.inactiveBackground": "#3fb65b"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.markdownlint": true
+  },
+  "editor.formatOnSave": true
+}

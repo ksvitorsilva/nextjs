@@ -1,0 +1,39 @@
+categories:
+  - title: "🚀 Features"
+    labels:
+      - "feature"
+      - "enhancement"
+  - title: "🐛 Bug Fixes"
+    labels:
+      - "fix"
+      - "bugfix"
+      - "bug"
+  - title: "💥 Breaking changes"
+    labels:
+      - "breaking changes"
+  - title: "📦 New dependencies"
+    labels:
+      - "new dependencies"
+      - "dependency"
+      - "dependencies"
+  - title: "💄 Refines"
+    labels:
+      - "polish"
+  - title: "📘 Documentation"
+    labels:
+      - "documentation"
+template: |
+  ## Changes
+
+  $CHANGES
+
+  ---
+
+  ### 👽 Contributors
+  Our big thanks to:
+  $CONTRIBUTORS
+
+  ---
+
+  ### 🏷️ Previous tag
+  $PREVIOUS_TAG
