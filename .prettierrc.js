@@ -12,7 +12,7 @@ module.exports = {
   // lf instead of 'crlf'
   endOfLine: 'lf',
   // `{ Button }` instead of `{Button}`
-  bracketSpacing: false,
+  bracketSpacing: true,
   // markdown text wrap if it exceeds the print width
   proseWrap: 'always',
 };
