@@ -4,6 +4,7 @@ import App from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import theme from '../styles/theme';
 import GlobalStyle from '../styles/global-styles';
+// import ThemeSelector from '../components/theme-selector';
 
 export default class MyApp extends App {
   // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
@@ -11,9 +12,10 @@ export default class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme.dark}>
         <GlobalStyle />
         <Component {...pageProps} />
+        {/* <ThemeSelector /> */}
       </ThemeProvider>
     );
   }

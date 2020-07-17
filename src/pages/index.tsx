@@ -8,19 +8,16 @@ import {
   FaMedium,
   FaDev,
 } from 'react-icons/fa';
-
-const Container = styled.div`
-  color: ${({ theme }) => theme.colors.primary};
-  flex-direction: column;
-  justify-content: center;
-`;
+import Container from '../components/container';
 
 const H1 = styled.h1`
   text-align: center;
 `;
+
 const P = styled.p`
   text-align: center;
 `;
+
 const Span = styled.span`
   text-align: center;
   padding: 5px;

@@ -1,13 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+    @font-face {
+        font-family: 'Coiny';
+        src: url('/static/fonts/Coiny-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'Fredoka One';
+        src: url('/static/fonts/FredokaOne-Regular.ttf');
+    }
     html { 
         display: flex;
         height: 100%; 
         margin: 0px; 
         padding: 0px; 
-        background: rgb(136, 21, 250); 
-        background: linear-gradient(49deg, rgba(136, 21, 250, 1) 22%, rgba(181, 86, 224, 1) 100%);}
+        background:  ${({ theme }) => theme.background}
+    }
     body { 
         display: flex;
         flex:1;

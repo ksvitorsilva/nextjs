@@ -1,5 +1,7 @@
+import darkTheme from './dark-theme';
+import lightTheme from './light-theme';
+
 export default {
-  colors: {
-    primary: '#fff',
-  },
+  dark: darkTheme,
+  light: lightTheme,
 };

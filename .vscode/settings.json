@@ -10,5 +10,6 @@
     "source.fixAll.eslint": true,
     "source.fixAll.markdownlint": true
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "files.eol": "\n"
 }
