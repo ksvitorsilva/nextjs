@@ -7,7 +7,8 @@ export default createGlobalStyle`
         margin: 0px; 
         padding: 0px; 
         background: rgb(136, 21, 250); 
-        background: linear-gradient(49deg, rgba(136, 21, 250, 1) 22%, rgba(181, 86, 224, 1) 100%);}
+        background:  ${({ theme }) => theme?.background};
+        }
     body { 
         display: flex;
         flex:1;
