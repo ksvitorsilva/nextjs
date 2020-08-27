@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
@@ -6,11 +6,8 @@ const StyledContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-type TypesContainer = {
-  children: ReactNode;
-};
 
-const Container: FC = ({ children }: TypesContainer) => {
+const Container: FC = ({ children }: Custom.ChildrenProp) => {
   return <StyledContainer>{children}</StyledContainer>;
 };
 
