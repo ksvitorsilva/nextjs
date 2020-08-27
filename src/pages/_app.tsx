@@ -4,7 +4,7 @@ import NextApp from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import Themes from '../styles/theme';
 import GlobalStyle from '../styles/global-styles';
-import ThemeSelector from '../components/theme-selector';
+import { ThemeSelector } from '../components';
 
 export default class App extends NextApp {
   state = { theme: '' };
@@ -28,12 +28,18 @@ export default class App extends NextApp {
   };
 
   private handleToggle = (): void => {
-    if (!this.state.theme) {
-      this.changeState('light');
-    } else if (this.state.theme === 'dark') {
-      this.changeState('light');
-    } else if (this.state.theme === 'light') {
-      this.changeState('dark');
+    switch (this.state.theme) {
+      case 'dark':
+        this.changeState('light');
+        break;
+
+      case 'light':
+        this.changeState('dark');
+        break;
+
+      default:
+        this.changeState('light');
+        break;
     }
   };
 

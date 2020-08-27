@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import Head from 'next/head';
 import styled from 'styled-components';
 import {
   FaGithub,
@@ -8,7 +7,7 @@ import {
   FaMedium,
   FaDev,
 } from 'react-icons/fa';
-import Container from '../components/container';
+import { Container, Header } from '../components';
 
 const H1 = styled.h1`
   text-align: center;
@@ -16,6 +15,7 @@ const H1 = styled.h1`
 
 const P = styled.p`
   text-align: center;
+  font-size: 1.2em;
 `;
 
 const Span = styled.span`
@@ -30,23 +30,18 @@ const Span = styled.span`
 const Home: FC = () => {
   return (
     <Container>
-      <Head>
-        <title>Create Next App </title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <>
-        <H1>Hello, I am Vitor Silva </H1>
-        <P>
-          JS Dev | [ Automation,Gadget,Self-sustaining ] Fanatic | Dog lover
-        </P>
-        <Span>
-          <FaGithub />
-          <FaStackOverflow />
-          <FaLinkedin />
-          <FaMedium />
-          <FaDev />
-        </Span>
-      </>
+      <Header />
+      <H1>{"👋 Hello, I'm Vitor Silva "}</H1>
+      <P>
+        {'Web Dev | [ Automation,Gadget,Self-sustaining ] fanatic | Dog lover '}
+      </P>
+      <Span>
+        <FaGithub />
+        <FaStackOverflow />
+        <FaLinkedin />
+        <FaMedium />
+        <FaDev />
+      </Span>
     </Container>
   );
 };
