@@ -1,13 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import {
-  FaGithub,
-  FaStackOverflow,
-  FaLinkedin,
-  FaMedium,
-  FaDev,
-} from 'react-icons/fa';
-import { Container, Header } from '../components';
+import { FaGithub, FaLinkedin, FaMedium, FaDev } from 'react-icons/fa';
+import { Container, Header, Link } from '../components';
 
 const H1 = styled.h1`
   text-align: center;
@@ -22,7 +16,7 @@ const Span = styled.span`
   text-align: center;
   padding: 5px;
   font-size: 1.3em;
-  & > svg {
+  & > a {
     padding-right: 10px;
   }
 `;
@@ -36,11 +30,18 @@ const Home: FC = () => {
         {'Web Dev | [ Automation,Gadget,Self-sustaining ] fanatic | Dog lover '}
       </P>
       <Span>
-        <FaGithub />
-        <FaStackOverflow />
-        <FaLinkedin />
-        <FaMedium />
-        <FaDev />
+        <Link href="https://github.com/ksvitorsilva">
+          <FaGithub />
+        </Link>
+        <Link href="https://pt.linkedin.com/in/ksvitorsilva">
+          <FaLinkedin />
+        </Link>
+        <Link href="https://medium.com/@ksvitorsilva">
+          <FaMedium />
+        </Link>
+        <Link href="https://dev.to/ksvitorsilva">
+          <FaDev />
+        </Link>
       </Span>
     </Container>
   );
