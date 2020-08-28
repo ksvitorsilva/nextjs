@@ -12,6 +12,7 @@ export default createGlobalStyle`
     body { 
         display: flex;
         flex:1;
+        font-family: "Montserrat-Regular";
     }
     div {
         display: flex;

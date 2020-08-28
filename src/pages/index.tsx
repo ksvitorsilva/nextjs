@@ -5,6 +5,7 @@ import { Container, Header, Link } from '../components';
 
 const H1 = styled.h1`
   text-align: center;
+  font-family: 'Montserrat-Bold';
 `;
 
 const P = styled.p`

@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import Themes from '../styles/theme';
 import GlobalStyle from '../styles/global-styles';
 import { ThemeSelector } from '../components';
+import '../styles/fonts.css';
 
 export default class App extends NextApp {
   state = { theme: '' };

@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
+  align-items: center;
   color: ${({ theme }) => theme.colors.primary};
   flex-direction: column;
   justify-content: center;
