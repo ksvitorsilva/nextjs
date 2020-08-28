@@ -8,7 +8,7 @@
     "dev": "next dev",
     "lint": "npm-run-all lint:prettier lint:eslint",
     "lint:eslint": "eslint --ext .tsx --ext .ts src/",
-    "lint:prettier": "prettier --write  './src/**/*.{ts,tsx}' ",
+    "lint:prettier": "prettier --write  './src/**/*.{ts,tsx,css}' ",
     "start": "next start"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "@types/react": "^16.9.48",
     "@types/styled-components": "^5.1.2",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
     "babel-plugin-styled-components": "^1.11.1",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
