@@ -17,7 +17,7 @@ const Link = ({
   children,
   target = '_blank',
 }: HeaderProps): JSX.Element => (
-  <A href={href} target={target}>
+  <A href={href} target={target} rel={target === '_blank' ? 'noreferrer' : ''}>
     {children}
   </A>
 );

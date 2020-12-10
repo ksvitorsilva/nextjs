@@ -6,8 +6,8 @@ export default createGlobalStyle`
         height: 100%; 
         margin: 0px; 
         padding: 0px; 
-        background: rgb(136, 21, 250); 
         background:  ${({ theme }) => theme?.background};
+        /* transition: background 0.5s ease; */
         }
     body { 
         display: flex;

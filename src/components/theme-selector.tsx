@@ -1,5 +1,5 @@
-import React, { useContext, FC } from 'react';
-import { FaSun, FaMoon } from 'react-icons/fa';
+import { FaMoon, FaSun } from 'react-icons/fa';
+import React, { FC, useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 
 type TypesThemeSelector = {
