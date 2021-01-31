@@ -9,7 +9,7 @@ const A = styled.a`
 type HeaderProps = {
   href: string;
   children: React.ReactNode;
-  target?: '_blank' | '_parent' | '_self' | ' _top	';
+  target?: '_blank' | '_parent' | '_self' | '_top';
 };
 
 const Link = ({
