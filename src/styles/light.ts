@@ -1,6 +1,8 @@
-export default Object.freeze({
+const light = {
   colors: {
     primary: 'black',
   },
   background: 'white',
-});
+};
+
+export default light;

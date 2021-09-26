@@ -6,7 +6,7 @@ import { AppProps } from 'next/app';
 import React from 'react';
 import GlobalStyle from '../styles/global-styles';
 
-const AppProvider = dynamic(import('../components/app-provider'), {
+const AppProvider = dynamic(() => import('../components/app-provider'), {
   ssr: false,
 });
 

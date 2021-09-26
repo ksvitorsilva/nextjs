@@ -1,7 +1,10 @@
+import { DefaultTheme } from 'styled-components';
 import dark from './dark';
 import light from './light';
 
-export default Object.freeze({
+const thenmes: Record<string, DefaultTheme> = {
   dark,
   light,
-});
+};
+
+export default thenmes;
