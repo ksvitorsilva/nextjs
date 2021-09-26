@@ -11,14 +11,14 @@ interface SerializerSettings {
  * @param {Object} defaultValue The value to use if it is not already in localStorage
  * @param {{serialize: Function, deserialize: Function}} options The serialize and deserialize functions to use (defaults to JSON.stringify and JSON.parse respectively)
  */
-function useLocalStorageState(
+function useLocalStorageState<T>(
   key: string,
   defaultValue: string | (() => void),
   {
     serialize = JSON.stringify,
     deserialize = JSON.parse,
   }: SerializerSettings = {}
-): [any, (value: any) => void] {
+): [string, (value: T) => void] {
   const [state, setState] = React.useState(() => {
     const valueInLocalStorage = localStorage.getItem(key);
 

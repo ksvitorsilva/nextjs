@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { ThemeProvider } from 'styled-components';
-import Themes from '../styles/theme';
+import thenmes from '../styles/theme';
 import ThemeSelector from './theme-selector';
 import useLocalStorageState from '../hooks/useLocalStorageState';
 
 const AppProvider: FC = ({ children }: Custom.ChildrenProp) => {
-  const [state, setState] = useLocalStorageState('theme', 'light');
+  const [state, setState] = useLocalStorageState<string>('theme', 'light');
   const handleToggle = (): void => {
     switch (state) {
       case 'dark':
@@ -23,7 +23,7 @@ const AppProvider: FC = ({ children }: Custom.ChildrenProp) => {
   };
 
   return (
-    <ThemeProvider theme={Themes[state]}>
+    <ThemeProvider theme={thenmes[state]}>
       <ThemeSelector toggle={handleToggle} theme={state} />
       {children}
     </ThemeProvider>
