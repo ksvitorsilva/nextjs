@@ -22,6 +22,9 @@ categories:
   - title: "📘 Documentation"
     labels:
       - "documentation"
+  - title: "⚙️ Integrations"
+    labels:
+      - "integrations"
 template: |
   ## Changes
 
