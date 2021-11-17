@@ -1,0 +1,20 @@
+# Set to true to add reviewers to pull requests
+addReviewers: false
+useReviewGroups: false # Disabled because it's interfering with dependabot PRs.
+# Set to true to add assignees to pull requests
+addAssignees: author
+# https://github.com/kentaro-m/auto-assign
+# A list of reviewers to be added to pull requests (GitHub user name)
+# Add Github team to the pull request based on single reviewers list using the org/team_slug or /team_slug syntax.
+reviewers:
+  - ksvitorsilva
+
+# A list of keywords to be skipped the process that add reviewers if pull requests include it
+filterLabels:
+  exclude:
+    - wip
+    - dependabot
+
+# A number of reviewers added to the pull request
+# Set 0 to add all the reviewers (default: 0)
+numberOfReviewers: 1
