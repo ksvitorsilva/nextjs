@@ -1,5 +1,4 @@
 // https://github.com/vercel/next.js/blob/canary/examples/with-styled-components/pages/_document.js
-import React from 'react';
 import Document, { DocumentContext } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 

@@ -1,5 +1,5 @@
 import { FaMoon, FaSun } from 'react-icons/fa';
-import React, { FC, useContext } from 'react';
+import { FC, useContext } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 
 type TypesThemeSelector = {
@@ -12,6 +12,7 @@ const Container = styled.a`
   top: 0;
   right: 0;
   padding: 1rem;
+  z-index: 10;
 `;
 
 const ThemeSelector: FC<TypesThemeSelector> = ({

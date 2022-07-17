@@ -4,14 +4,16 @@ export default createGlobalStyle`
     html { 
         display: flex;
         height: 100%; 
-        margin: 0px; 
-        padding: 0px; 
         background:  ${({ theme }) => theme?.background};
-        /* transition: background 0.5s ease; */
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
         }
     body { 
         display: flex;
         flex:1;
+        margin: 0;
+        padding: 0;
         font-family: "Montserrat-Regular";
     }
     div {

@@ -1,10 +1,9 @@
-import React, { FC } from 'react';
 import { ThemeProvider } from 'styled-components';
 import thenmes from '../styles/theme';
 import ThemeSelector from './theme-selector';
 import useLocalStorageState from '../hooks/useLocalStorageState';
 
-const AppProvider: FC = ({ children }: Custom.ChildrenProp) => {
+const AppProvider = ({ children }: Custom.ChildrenProp) => {
   const [state, setState] = useLocalStorageState<string>('theme', 'light');
   const handleToggle = (): void => {
     switch (state) {
