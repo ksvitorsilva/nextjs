@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
@@ -8,7 +7,7 @@ const StyledContainer = styled.div`
   justify-content: center;
 `;
 
-const Container: FC = ({ children }: Custom.ChildrenProp) => {
+const Container = ({ children }: Custom.ChildrenProp) => {
   return <StyledContainer>{children}</StyledContainer>;
 };
 

@@ -4,4 +4,4 @@ module.exports = {
     autoPrerender: true,
   },
   reactStrictMode: true,
-}
+};

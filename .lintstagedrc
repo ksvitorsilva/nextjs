@@ -1,5 +1,1 @@
-{
-  "**/*.{ts,tsx}": "eslint",
-  "**/*.{ts,tsx,js,md}": "prettier --write",
-  "!(*package-lock).json": "prettier --write",
-}
+{ '*.[jt]s': ['yarn lint'] }

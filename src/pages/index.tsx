@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaLinkedin, FaMedium, FaDev } from 'react-icons/fa';
 import { Container, Header, Link } from '../components';
@@ -22,13 +21,15 @@ const Span = styled.span`
   }
 `;
 
-const Home: FC = () => {
+const Home = () => {
   return (
     <Container>
       <Header />
       <H1>{"👋 Hello, I'm Vitor Silva "}</H1>
       <P>
-        {'Web Dev | [ Automation,Gadget,Self-sustaining ] fanatic | Dog lover '}
+        {
+          'Web Dev | [ Automation, Gadget, Self-sustaining ] fanatic | Dog lover '
+        }
       </P>
       <Span>
         <Link href="https://github.com/ksvitorsilva">
