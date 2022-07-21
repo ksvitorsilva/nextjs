@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledContainer = styled.div`
+const StyledDiv = styled.div`
   align-items: center;
   color: ${({ theme }) => theme.colors.primary};
   flex-direction: column;
@@ -8,7 +8,7 @@ const StyledContainer = styled.div`
 `;
 
 const Container = ({ children }: Custom.ChildrenProp) => {
-  return <StyledContainer>{children}</StyledContainer>;
+  return <StyledDiv>{children}</StyledDiv>;
 };
 
 export default Container;

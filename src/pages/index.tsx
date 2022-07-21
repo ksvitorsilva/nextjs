@@ -32,16 +32,16 @@ const Home = () => {
         }
       </P>
       <Span>
-        <Link href="https://github.com/ksvitorsilva">
+        <Link label="github" href="https://github.com/ksvitorsilva">
           <FaGithub />
         </Link>
-        <Link href="https://pt.linkedin.com/in/ksvitorsilva">
+        <Link label="linkedin" href="https://pt.linkedin.com/in/ksvitorsilva">
           <FaLinkedin />
         </Link>
-        <Link href="https://medium.com/@ksvitorsilva">
+        <Link label="medium" href="https://medium.com/@ksvitorsilva">
           <FaMedium />
         </Link>
-        <Link href="https://dev.to/ksvitorsilva">
+        <Link label="dev.to" href="https://dev.to/ksvitorsilva">
           <FaDev />
         </Link>
       </Span>

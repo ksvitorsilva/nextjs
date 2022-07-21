@@ -1,4 +1,4 @@
-import '../styles/fonts.css'
+import '../styles/fonts.css';
 import GlobalStyle from '../styles/global-styles';
 import dynamic from 'next/dynamic';
 import type { AppProps } from 'next/app';
