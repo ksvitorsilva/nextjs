@@ -1,1 +1,4 @@
-{ '*.[jt]s': ['yarn lint'] }
+{
+  './src/**.[jt]s': 'yarn lint',
+  '!(*package-lock).json': 'prettier --write',
+}

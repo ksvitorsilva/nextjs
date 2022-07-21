@@ -1,24 +1,31 @@
 import styled from 'styled-components';
 
-const A = styled.a`
-  font-size: 1.2em;
-  color: ${({ theme }) => theme.colors.primary};
-`;
-
 type HeaderProps = {
+  label: string;
   href: string;
   children: React.ReactNode;
   target?: '_blank' | '_parent' | '_self' | '_top';
 };
 
+const StyledA = styled.a`
+  font-size: 1.2em;
+  color: ${({ theme }) => theme.colors.primary};
+`;
+
 const Link = ({
+  label,
   href,
   children,
   target = '_blank',
 }: HeaderProps): JSX.Element => (
-  <A href={href} target={target} rel={target === '_blank' ? 'noreferrer' : ''}>
+  <StyledA
+    href={href}
+    target={target}
+    rel={target === '_blank' ? 'noreferrer' : ''}
+    aria-label={label}
+  >
     {children}
-  </A>
+  </StyledA>
 );
 
 export default Link;

@@ -7,7 +7,7 @@ type TypesThemeSelector = {
   toggle: () => void;
 };
 
-const Container = styled.a`
+const StyledSpan = styled.span`
   position: absolute;
   top: 0;
   right: 0;
@@ -24,13 +24,13 @@ const ThemeSelector: FC<TypesThemeSelector> = ({
   const COLOR = colors.primary;
 
   return (
-    <Container onClick={toggle}>
+    <StyledSpan onClick={toggle}>
       {theme === 'dark' ? (
         <FaSun size={ICON_SIZE} color={COLOR} />
       ) : (
         <FaMoon size={ICON_SIZE} color={COLOR} />
       )}
-    </Container>
+    </StyledSpan>
   );
 };
 

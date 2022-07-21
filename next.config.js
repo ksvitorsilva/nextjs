@@ -7,6 +7,10 @@ module.exports = {
   devIndicators: {
     autoPrerender: true,
   },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
   images: {
     domains: ['cf.geekdo-images.com'],
   },
