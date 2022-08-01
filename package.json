@@ -25,7 +25,7 @@
     "@types/node": "18.0.6",
     "@types/react": "18.0.15",
     "@types/styled-components": "^5.1.25",
-    "eslint": "8.20.0",
+    "eslint": "8.21.0",
     "eslint-config-next": "^12.2.2",
     "husky": "^8.0.1",
     "is-ci": "^3.0.1",
