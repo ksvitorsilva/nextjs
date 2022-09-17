@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/node": "18.7.18",
     "@types/react": "18.0.15",
-    "@types/styled-components": "^5.1.25",
+    "@types/styled-components": "^5.1.26",
     "eslint": "8.23.0",
     "eslint-config-next": "^12.2.2",
     "husky": "^8.0.1",
