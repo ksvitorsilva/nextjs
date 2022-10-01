@@ -1,6 +1,14 @@
+/**
+ * Module dependencies.
+ */
+
 import styled from 'styled-components';
 import { FaGithub, FaLinkedin, FaMedium, FaDev } from 'react-icons/fa';
-import { Container, Header, Link } from '../components';
+import { Container, Header, Link } from 'src/components';
+
+/**
+ * Components.
+ */
 
 const H1 = styled.h1`
   text-align: center;
@@ -20,6 +28,10 @@ const Span = styled.span`
     padding-right: 10px;
   }
 `;
+
+/**
+ * Home.
+ */
 
 const Home = () => {
   return (
@@ -48,5 +60,9 @@ const Home = () => {
     </Container>
   );
 };
+
+/**
+ * Export Home.
+ */
 
 export default Home;

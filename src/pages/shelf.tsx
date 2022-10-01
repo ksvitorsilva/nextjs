@@ -1,10 +1,18 @@
+/**
+ * Module dependencies.
+ */
+
 import Image from 'next/image';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
-import boardGames from '../data/board-games';
+import boardGames from 'src/data/board-games';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { Header } from '../components';
+import { Header } from 'src/components';
+
+/**
+ * Shelf.
+ */
 
 const Shelf = () => {
   const isSm = useMediaQuery('(max-width:600px)');
@@ -32,5 +40,9 @@ const Shelf = () => {
     </>
   );
 };
+
+/**
+ * Export Shelf.
+ */
 
 export default Shelf;

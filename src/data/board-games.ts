@@ -1,3 +1,10 @@
+/**
+ * Board games data.
+ *
+ * A matrix 4x4 composed of BGG information.
+ * Use `cols` and `rows` to manipulate the grid spaces.
+ */
+
 const boardGames = [
   {
     img: 'https://cf.geekdo-images.com/MjeJZfulbsM1DSV3DrGJYA__imagepage/img/0ksox22FKLq-Z-rsbBlF2IDG9x0=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5100691.jpg',
@@ -145,6 +152,18 @@ const boardGames = [
     cols: 2,
     rows: 2,
   },
+  {
+    img: 'https://cf.geekdo-images.com/3h9W8BfB_rltQ48EBmHliw__imagepage/img/6lDjG4F6qRhb3R2MV5gRVp8PKx4=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3132685.png',
+    title: 'Kingdomino',
+  },
+  {
+    img: 'https://cf.geekdo-images.com/1x9m-ZQDC3HBfpnuaPg6Jw__imagepage/img/0O5nx9uOmHv3L8EVd6HsvAulDIg=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5235263.png',
+    title: 'Codenames disney',
+  },
 ];
+
+/**
+ * Export boardGames.
+ */
 
 export default boardGames;

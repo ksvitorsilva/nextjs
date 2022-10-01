@@ -1,7 +1,15 @@
-import { ThemeProvider } from 'styled-components';
-import thenmes from '../styles/theme';
+/**
+ * Module dependencies.
+ */
+
 import ThemeSelector from './theme-selector';
-import useLocalStorageState from '../hooks/useLocalStorageState';
+import thenmes from 'src/styles/theme';
+import useLocalStorageState from 'src/hooks/useLocalStorageState';
+import { ThemeProvider } from 'styled-components';
+
+/**
+ * AppProvider.
+ */
 
 const AppProvider = ({ children }: Custom.ChildrenProp) => {
   const [state, setState] = useLocalStorageState<string>('theme', 'light');
@@ -28,5 +36,9 @@ const AppProvider = ({ children }: Custom.ChildrenProp) => {
     </ThemeProvider>
   );
 };
+
+/**
+ * Export AppProvider.
+ */
 
 export default AppProvider;
