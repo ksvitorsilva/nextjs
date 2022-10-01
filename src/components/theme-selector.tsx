@@ -1,11 +1,23 @@
-import { FaMoon, FaSun } from 'react-icons/fa';
-import { FC, useContext } from 'react';
+/**
+ * Module dependencies.
+ */
+
 import styled, { ThemeContext } from 'styled-components';
+import { FC, useContext } from 'react';
+import { FaMoon, FaSun } from 'react-icons/fa';
+
+/**
+ * Types.
+ */
 
 type TypesThemeSelector = {
   theme: string;
   toggle: () => void;
 };
+
+/**
+ * Components.
+ */
 
 const StyledSpan = styled.span`
   position: absolute;
@@ -14,6 +26,10 @@ const StyledSpan = styled.span`
   padding: 1rem;
   z-index: 10;
 `;
+
+/**
+ * ThemeSelector.
+ */
 
 const ThemeSelector: FC<TypesThemeSelector> = ({
   toggle,
@@ -33,5 +49,9 @@ const ThemeSelector: FC<TypesThemeSelector> = ({
     </StyledSpan>
   );
 };
+
+/**
+ * Export ThemeSelector.
+ */
 
 export default ThemeSelector;

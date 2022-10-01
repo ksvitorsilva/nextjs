@@ -1,4 +1,12 @@
+/**
+ * Module dependencies.
+ */
+
 import styled from 'styled-components';
+
+/**
+ * Components.
+ */
 
 const StyledDiv = styled.div`
   align-items: center;
@@ -7,8 +15,16 @@ const StyledDiv = styled.div`
   justify-content: center;
 `;
 
+/**
+ * Container.
+ */
+
 const Container = ({ children }: Custom.ChildrenProp) => {
   return <StyledDiv>{children}</StyledDiv>;
 };
+
+/**
+ * Export Container.
+ */
 
 export default Container;

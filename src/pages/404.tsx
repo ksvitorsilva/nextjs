@@ -1,5 +1,13 @@
+/**
+ * Module dependencies.
+ */
+
 import styled from 'styled-components';
-import { Container } from '../components';
+import { Container } from 'src/components';
+
+/**
+ * Components.
+ */
 
 const Image = styled.img`
   max-height: 6rem;
@@ -18,7 +26,11 @@ const P = styled.p`
   margin: 0;
 `;
 
-const Header = (): JSX.Element => (
+/**
+ * NotFound.
+ */
+
+const NotFound = (): JSX.Element => (
   <Container>
     <H1>404</H1>
     <P>Lost in space?</P>
@@ -26,4 +38,8 @@ const Header = (): JSX.Element => (
   </Container>
 );
 
-export default Header;
+/**
+ * Export NotFound.
+ */
+
+export default NotFound;

@@ -1,4 +1,12 @@
-import React from 'react';
+/**
+ * Module dependencies.
+ */
+
+import { useEffect, useRef, useState } from 'react';
+
+/**
+ * Types.
+ */
 
 interface SerializerSettings {
   serialize?: any;
@@ -6,11 +14,14 @@ interface SerializerSettings {
 }
 
 /**
- * 👷 - Manage local storage
+ * UseLocalStorageState
+ *
+ * 👷 - Manage local storage.
  * @param {String} key The key to set in localStorage for this value
  * @param {Object} defaultValue The value to use if it is not already in localStorage
  * @param {{serialize: Function, deserialize: Function}} options The serialize and deserialize functions to use (defaults to JSON.stringify and JSON.parse respectively)
  */
+
 function useLocalStorageState<T>(
   key: string,
   defaultValue: string | (() => void),
@@ -19,7 +30,7 @@ function useLocalStorageState<T>(
     deserialize = JSON.parse,
   }: SerializerSettings = {}
 ): [string, (value: T) => void] {
-  const [state, setState] = React.useState(() => {
+  const [state, setState] = useState(() => {
     const valueInLocalStorage = localStorage.getItem(key);
 
     if (valueInLocalStorage) {
@@ -29,9 +40,9 @@ function useLocalStorageState<T>(
     return typeof defaultValue === 'function' ? defaultValue() : defaultValue;
   });
 
-  const prevKeyRef = React.useRef(key);
+  const prevKeyRef = useRef(key);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const prevKey = prevKeyRef.current;
 
     if (prevKey !== key) {
@@ -43,5 +54,9 @@ function useLocalStorageState<T>(
 
   return [state, setState];
 }
+
+/**
+ * Export useLocalStorageState.
+ */
 
 export default useLocalStorageState;

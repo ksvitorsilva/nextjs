@@ -1,23 +1,39 @@
+/**
+ * Module dependencies.
+ */
+
 import styled from 'styled-components';
 
-type HeaderProps = {
+/**
+ * Types.
+ */
+
+type LinkProps = {
   label: string;
   href: string;
   children: React.ReactNode;
   target?: '_blank' | '_parent' | '_self' | '_top';
 };
 
+/**
+ * Components.
+ */
+
 const StyledA = styled.a`
   font-size: 1.2em;
   color: ${({ theme }) => theme.colors.primary};
 `;
+
+/**
+ * Link.
+ */
 
 const Link = ({
   label,
   href,
   children,
   target = '_blank',
-}: HeaderProps): JSX.Element => (
+}: LinkProps): JSX.Element => (
   <StyledA
     href={href}
     target={target}
@@ -27,5 +43,9 @@ const Link = ({
     {children}
   </StyledA>
 );
+
+/**
+ * Export Link.
+ */
 
 export default Link;

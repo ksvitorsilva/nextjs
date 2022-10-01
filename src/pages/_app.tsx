@@ -1,11 +1,23 @@
-import '../styles/fonts.css';
-import GlobalStyle from '../styles/global-styles';
+/**
+ * Module dependencies.
+ */
+
+import 'src/styles/fonts.css';
+import GlobalStyle from 'src/styles/global-styles';
 import dynamic from 'next/dynamic';
 import type { AppProps } from 'next/app';
 
-const AppProvider = dynamic(() => import('../components/app-provider'), {
+/**
+ * Dynamic import AppProvider.
+ */
+
+const AppProvider = dynamic(() => import('src/components/app-provider'), {
   ssr: false,
 });
+
+/**
+ * App.
+ */
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
   return (
@@ -15,5 +27,9 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
     </AppProvider>
   );
 };
+
+/**
+ * Export App.
+ */
 
 export default App;

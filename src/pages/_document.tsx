@@ -1,8 +1,16 @@
+/**
+ * Module dependencies.
+ */
+
 // https://github.com/vercel/next.js/blob/canary/examples/with-styled-components/pages/_document.js
 import Document, { DocumentContext } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-export default class MyDocument extends Document {
+/**
+ * MyDocument.
+ */
+
+class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -24,3 +32,9 @@ export default class MyDocument extends Document {
     }
   }
 }
+
+/**
+ * Export MyDocument.
+ */
+
+export default MyDocument;

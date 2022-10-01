@@ -1,13 +1,26 @@
+/**
+ * Module dependencies.
+ */
+
 import {
   ErrorBoundary as ReactErrorBoundary,
   FallbackProps,
 } from 'react-error-boundary';
+
+/**
+ * Types.
+ */
+
 type ErrorBoundaryProps = {
   ErrorFallback: React.ComponentType<FallbackProps>;
   children: JSX.Element;
   handleReset?: () => void;
   key: [string];
 };
+
+/**
+ * ErrorBoundary.
+ */
 
 const ErrorBoundary = ({
   children,
@@ -25,5 +38,9 @@ const ErrorBoundary = ({
     </ReactErrorBoundary>
   );
 };
+
+/**
+ * Export ErrorBoundary.
+ */
 
 export default ErrorBoundary;
