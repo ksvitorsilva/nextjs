@@ -8,7 +8,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 import boardGames from 'src/data/board-games';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import { Header } from 'src/components';
+import { BoardGamesCounter, Header } from 'src/components';
 
 /**
  * Shelf.
@@ -21,6 +21,7 @@ const Shelf = () => {
   return (
     <>
       <Header title="Shelf" />
+      <BoardGamesCounter />
       <ImageList gap={5} sx={{ margin: 0, width: 1 }} cols={snCols || 5}>
         {boardGames.map(({ cols = 1, img, rows = 1, title }) => (
           <ImageListItem key={img} cols={snCols || cols} rows={snCols || rows}>
