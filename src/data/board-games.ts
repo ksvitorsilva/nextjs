@@ -63,16 +63,13 @@ const boardGames = [
     title: 'Stone age',
   },
   {
-    img: 'https://cf.geekdo-images.com/rwOMxx4q5yuElIvo-1-OFw__imagepage/img/qXhBOrqJMEeA0pe6TMzWNZUTlbk=/fit-in/900x600/filters:no_upscale():strip_icc()/pic1904079.jpg',
-    title: 'Splendor',
-  },
-  {
     img: 'https://cf.geekdo-images.com/7UK6bLlP0Cz3EFYCqhtcSw__imagepage/img/ElB9XPY1bfoe0wz7zOqn_t9Uazo=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5934958.png',
     title: 'Furnace',
+    rows: 2,
   },
   {
-    img: 'https://cf.geekdo-images.com/okM0dq_bEXnbyQTOvHfwRA__imagepage/img/axGbn7f0x6UUb07DmzX9hg5TwIo=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6544250.png',
-    title: 'Carcassonne',
+    img: 'https://cf.geekdo-images.com/rwOMxx4q5yuElIvo-1-OFw__imagepage/img/qXhBOrqJMEeA0pe6TMzWNZUTlbk=/fit-in/900x600/filters:no_upscale():strip_icc()/pic1904079.jpg',
+    title: 'Splendor',
   },
   {
     img: 'https://cf.geekdo-images.com/yLZJCVLlIx4c7eJEWUNJ7w__imagepage/img/uIjeoKgHMcRtzRSR4MoUYl3nXxs=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4458123.jpg',
@@ -147,18 +144,44 @@ const boardGames = [
     title: 'Brazil imperial',
   },
   {
-    img: 'https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__imagepage/img/PoKEhfCrJtNe_BX-L8OYWDfyAmE=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5899025.jpg',
-    title: 'Living forest',
+    img: 'https://cf.geekdo-images.com/r0m-q6oq_s6yz6S9aJA5QA__imagepage/img/NHzy2ji-5djRzw-C2-RHwa57YK8=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5738482.png',
+    title: 'Carcassonne',
+    rows: 3,
     cols: 2,
-    rows: 2,
+  },
+  {
+    img: 'https://cf.geekdo-images.com/wMd7npCj8VObsqMVK5kawg__imagepage/img/ho7t0zRrGuUcir0J-tIJXHSjgKk=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4175159.jpg',
+    title: 'Chai',
   },
   {
     img: 'https://cf.geekdo-images.com/3h9W8BfB_rltQ48EBmHliw__imagepage/img/6lDjG4F6qRhb3R2MV5gRVp8PKx4=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3132685.png',
     title: 'Kingdomino',
   },
   {
-    img: 'https://cf.geekdo-images.com/1x9m-ZQDC3HBfpnuaPg6Jw__imagepage/img/0O5nx9uOmHv3L8EVd6HsvAulDIg=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5235263.png',
+    img: 'https://cf.geekdo-images.com/T1ltXwapFUtghS9A7_tf4g__imagepage/img/wf3HgW2e24O0mcsB5OIHJnxaeIM=/fit-in/900x600/filters:no_upscale():strip_icc()/pic1401448.jpg',
+    title: 'Love letter',
+  },
+  {
+    img: 'https://cf.geekdo-images.com/fPhdfZX9UTLr4-SVgK0zoQ__imagepage/img/PoKEhfCrJtNe_BX-L8OYWDfyAmE=/fit-in/900x600/filters:no_upscale():strip_icc()/pic5899025.jpg',
+    title: 'Living forest',
+    cols: 2,
+    rows: 2,
+  },
+  {
+    img: 'https://cf.geekdo-images.com/cAPTkL2BR3snLO71dkH8rw__imagepage/img/IOY562LZXFjsmcVioY5c_r70Ebc=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2576459.jpg',
+    title: 'The Resistance',
+  },
+  {
+    img: 'https://cf.geekdo-images.com/LPa6rsGcv8S0-OeNjCOAEQ__imagepage/img/3xVP5JSdSfFbo2c1nnZS5xxGhfI=/fit-in/900x600/filters:no_upscale():strip_icc()/pic1398895.jpg',
+    title: 'The Resistance: Avalon',
+  },
+  {
+    img: 'https://cf.geekdo-images.com/Y05zcr91wl8oUEP6ULAnVg__imagepage/img/dF2IEFSZbvhwiI2-vDBviEu_j7U=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3626220.jpg',
     title: 'Codenames disney',
+  },
+  {
+    img: 'https://cf.geekdo-images.com/4PRD3SvbYGPUr-fRjy0O6Q__imagepage/img/0UNSMgaYejfaf9PzciRtIU0JphQ=/fit-in/900x600/filters:no_upscale():strip_icc()/pic4309360.jpg',
+    title: 'Tidal Blades: Heroes of the Reef',
   },
 ];
 
