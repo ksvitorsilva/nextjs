@@ -27,7 +27,7 @@
     "@types/react": "18.0.26",
     "@types/styled-components": "^5.1.26",
     "eslint": "8.28.0",
-    "eslint-config-next": "^12.3.1",
+    "eslint-config-next": "^13.1.1",
     "husky": "^8.0.1",
     "is-ci": "^3.0.1",
     "lint-staged": "^13.0.4",
