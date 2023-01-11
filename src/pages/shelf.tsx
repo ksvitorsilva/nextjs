@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
