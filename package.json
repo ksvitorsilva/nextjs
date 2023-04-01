@@ -33,7 +33,7 @@
     "lint-staged": "^13.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.3",
-    "react-error-boundary": "^3.1.4",
+    "react-error-boundary": "^4.0.3",
     "remark-cli": "^11.0.0",
     "remark-lint-list-item-indent": "^3.1.1",
     "remark-preset-lint-consistent": "^5.1.1",
