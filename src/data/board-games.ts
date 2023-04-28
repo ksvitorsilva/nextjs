@@ -187,6 +187,24 @@ const boardGames = [
     img: 'https://cf.geekdo-images.com/3h9W8BfB_rltQ48EBmHliw__imagepage/img/6lDjG4F6qRhb3R2MV5gRVp8PKx4=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3132685.png',
     title: 'Kingdomino',
   },
+  {
+    img: 'https://cf.geekdo-images.com/0xqF_KyOb7V26Lu5YT3fxw__imagepage/img/sxzhjfiLwG7mtEkRpAvsw1P5cec=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6699821.jpg',
+    title: 'Earth',
+    cols: 2,
+    rows: 2,
+  },
+  {
+    img: 'https://cf.geekdo-images.com/752GFSJLkyDZikThRM6gqQ__imagepage/img/euNMKtZIcbc8xyuZcxomFcgz3m0=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3000850.png',
+    title: 'Pandemic Iberia',
+  },
+  {
+    img: 'https://cf.geekdo-images.com/F0JWt4UKzih3O8FYTETpbg__imagepage/img/N5j40UllYAM_GX0sBPvZWTOVD1g=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6128189.png',
+    title: 'Land vs sea',
+  },
+  {
+    img: 'https://cf.geekdo-images.com/6irYLjUf_o0rK7E_4qI-gw__imagepage/img/fwIO4dkZKugq4F1vW65hharn_Rw=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6990829.png',
+    title: 'The Wolves',
+  },
 ];
 
 /**
