@@ -8,8 +8,8 @@
 
 ## Checklist
 
-*   \[ ] Commits are atomic and logically separated.
-*   \[ ] I have performed a self-review of my own code.
-*   \[ ] Performance implications have been considered.
-*   \[ ] New dependencies have been added to `package.json`.
-*   \[ ] The README file, if required, has been updated.
+* \[ ] Commits are atomic and logically separated.
+* \[ ] I have performed a self-review of my own code.
+* \[ ] Performance implications have been considered.
+* \[ ] New dependencies have been added to `package.json`.
+* \[ ] The README file, if required, has been updated.

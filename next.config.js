@@ -9,7 +9,11 @@ module.exports = {
     defaultLocale: 'en',
   },
   images: {
-    domains: ['cf.geekdo-images.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cf.geekdo-images.com',
+      }],
   },
   reactStrictMode: true,
 };
